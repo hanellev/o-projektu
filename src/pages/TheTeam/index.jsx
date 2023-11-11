@@ -1,3 +1,5 @@
+import { Footer } from '../../components/Footer';
+
 export const TheTeam = () => {
 	return (
 		<div className="container">
@@ -9,11 +11,7 @@ export const TheTeam = () => {
 			</p>
 			<div>
 				<h3>Hana Vavrušková</h3>
-				<img
-					src="pages/About/pics/hana_photo.jpg"
-					alt="running Hana"
-					width="200"
-				/>
+				<img src="/img/hana_photo.jpg" alt="running Hana" width="200" />
 				<p>
 					Původně mám vystudovanou anglistiku a k IT jsem se dostala náhodou,
 					když jsem začala pracovat na marketingovém oddělení ve Škoda Auto. Od
@@ -23,11 +21,7 @@ export const TheTeam = () => {
 			</div>
 			<div>
 				<h3>Liza Povkh</h3>
-				<img
-					src="pages/About/pics/liza_photo.jpg"
-					alt="Liza uphill"
-					width="200"
-				/>
+				<img src="/img/liza_photo.jpg" alt="Liza uphill" width="200" />
 				<p>
 					I've been working in finance for what it seems like forever, so
 					numbers are an easy read for me. But when it comes to reading chemical
@@ -36,8 +30,7 @@ export const TheTeam = () => {
 					myself, and at the same time help others live their better lives!
 				</p>
 			</div>
-			<h2>Our mentors</h2>
-			<p>Super cool guys from Pipedrive.</p>
+			<Footer />
 		</div>
 	);
 };

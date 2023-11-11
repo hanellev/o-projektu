@@ -17,7 +17,7 @@ const App = () => {
 		<div className="container">
 			<h1>Safe Beauty</h1>
 			<nav>
-				<Link to="/home">Home Page</Link>
+				<Link to="/">Home Page</Link>
 				<span> | </span>
 				<Link to="/project">Our Project</Link>
 				<span> | </span>
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
 		element: <App />,
 		children: [
 			{
-				path: 'home',
+				path: '/',
 				element: <HomePage />,
 			},
 			{
