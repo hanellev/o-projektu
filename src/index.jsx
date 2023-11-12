@@ -5,57 +5,53 @@ import { TheTeam } from './pages/TheTeam';
 import { OurProject } from './pages/OurProject';
 import { Mentors } from './pages/Mentors';
 import {
-	createBrowserRouter,
-	RouterProvider,
-	Outlet,
-	Link,
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+  Link,
 } from 'react-router-dom';
 import './global.css';
+import Navbar from './components/Navigation/navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 const App = () => {
-	return (
-		<div className="container">
-			<h1>Safe Beauty</h1>
-			<nav>
-				<Link to="/">Home Page</Link>
-				<span> | </span>
-				<Link to="/project">Our Project</Link>
-				<span> | </span>
-				<Link to="/team">The Team</Link>
-				<span> | </span>
-				<Link to="/mentors">Mentors</Link>
-				<span> | </span>
-			</nav>
-			<Outlet />
-		</div>
-	);
+  return (
+    <div className="container container-fluid">
+      <Header />
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </div>
+  );
 };
 
 const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <App />,
-		children: [
-			{
-				path: '/',
-				element: <HomePage />,
-			},
-			{
-				path: 'project',
-				element: <OurProject />,
-			},
-			{
-				path: 'team',
-				element: <TheTeam />,
-			},
-			{
-				path: 'mentors',
-				element: <Mentors />,
-			},
-		],
-	},
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        path: '/',
+        element: <HomePage />,
+      },
+      {
+        path: 'project',
+        element: <OurProject />,
+      },
+      {
+        path: 'team',
+        element: <TheTeam />,
+      },
+      {
+        path: 'mentors',
+        element: <Mentors />,
+      },
+    ],
+  },
 ]);
 
 createRoot(document.querySelector('#app')).render(
-	<RouterProvider router={router} />
+  <RouterProvider router={router} />,
 );
