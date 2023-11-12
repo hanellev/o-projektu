@@ -1,3 +1,6 @@
+import HanaPhoto from './img/hana_photo.jpg';
+import LizaPhoto from './img/IMG_1366.jpg';
+
 export const TheTeam = () => {
   return (
     <div>
@@ -13,7 +16,7 @@ export const TheTeam = () => {
           <div className="card">
             <img
               className="card-img-top"
-              src="img/hana_photo.jpg"
+              src={HanaPhoto}
               alt="Card image cap"
             />
             <div className="card-body">
@@ -22,7 +25,7 @@ export const TheTeam = () => {
                 Původně mám vystudovanou anglistiku a k IT jsem se dostala
                 náhodou, když jsem začala pracovat na marketingovém oddělení ve
                 Škoda Auto. Od té doby jsem se vzdělávala v různých skills,
-                dokud jsem se nepřesvědčila, že web mě baví ze všeho nejvíc :
+                dokud jsem se nepřesvědčila, že web mě baví ze všeho nejvíc!
               </p>
               <div className="card-footer">
                 <a
@@ -37,7 +40,7 @@ export const TheTeam = () => {
           <div className="card">
             <img
               className="card-img-top"
-              src="img/liza_photo.jpg"
+              src={LizaPhoto}
               alt="Card image cap"
             />
             <div className="card-body">
