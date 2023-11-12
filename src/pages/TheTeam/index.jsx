@@ -13,7 +13,7 @@ export const TheTeam = () => {
           <div className="card">
             <img
               className="card-img-top"
-              src="pages/TheTeam/img/hana_photo.jpg"
+              src="img/hana_photo.jpg"
               alt="Card image cap"
             />
             <div className="card-body">
@@ -37,11 +37,11 @@ export const TheTeam = () => {
           <div className="card">
             <img
               className="card-img-top"
-              src="pages/TheTeam/img/liza_photo.jpg"
+              src="img/liza_photo.jpg"
               alt="Card image cap"
             />
-            <div class="card-body">
-              <h5 class="card-title fw-semibold fs-4">Liza Povkh</h5>
+            <div className="card-body">
+              <h5 className="card-title fw-semibold fs-4">Liza Povkh</h5>
               <p className="card-text fw-light">
                 I've been working in finance for what it seems like forever, so
                 numbers are an easy read for me. But when it comes to reading

@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <div className="grid gap-4">
       <img
-        src="components/Header/SB.png"
+        src="SB.png"
         alt="running logo"
         width="75
       "
