@@ -9,7 +9,7 @@ export const HomePage = () => {
 				<h2>...</h2>
 			</header>
 			<main>
-			
+				<img src="/img/banner.jpg" alt="banner"></img>
 			</main>
 			<Footer />
 		</div>
